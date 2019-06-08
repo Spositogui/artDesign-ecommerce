@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<htmlm langue="pt-br">
+<html langue="pt-br">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, inicial-scale=1.0">
@@ -7,6 +7,115 @@
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
+	<main class="container">
 
+		<!-- header-->
+		<header id="header">
+			
+			<div id="header-container">
+				
+				<div id="bars-menu">
+					<img src="./imgs/icons/bars-icon.svg" alt="menu drop down" onclick="openMenu()">
+				</div>
+				
+				<div id="top-logo">
+					<img src="./imgs/Logo-Txt.png" alt="Logo Art Design & Cia">
+				</div>
+				
+				<div id="cart-shop">
+					<p>
+						<span id="cart-count">0</span> | <span id="cart-total">R$0.00</span>
+						<img src="./imgs/icons/shopping-bag-icon.svg" alt="Cart Icon">
+					</p>
+				</div>
+
+			</div>
+			<!-- Navbar -->
+			<nav id="navbar">
+				
+				<div id="open-menu">
+					
+					<input id="search-bar" type="text" placeholder="SEARCH">
+
+					<ul id="nav-menu">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Sobre</a></li>
+						<li><a href="#">Contato</a></li>
+						<li><a href="#">Produtos</a>
+							<span> > </span>
+						</li>
+					</ul>
+					<ul id="nav-login">	
+						<li><a href="#">Entrar</a></li>
+						<li><a href="#">Sair</a></li>
+					</ul>
+
+				</div>
+
+				<div id="close-menu" onclick="closeMenu()"></div>
+
+			</nav>
+		</header>
+		<!--Section -->
+		<section id="section-a">
+			
+			<div class="header-section">Destaques</div>
+			
+			<div class="produtos-em-destaque">
+				<img src="./imgs/coelho.jpg" alt="">
+				<p>Nome do Produto<br/>
+					<span>R$100,00</span>
+				</p>
+				<img class="cart-plus-icon"
+				src="./imgs/icons/cart-plus-icon.svg" alt="Icone de adicionar produto ao carrinho">
+			</div>
+
+			<div class="produtos-em-destaque">
+				<img src="./imgs/coelho.jpg" alt="">
+				<p>Nome do Produto<br/>
+					<span>R$100,00</span>
+				</p>
+				<img class="cart-plus-icon"
+				src="./imgs/icons/cart-plus-icon.svg" alt="Icone de adicionar produto ao carrinho">
+			</div>
+
+			<div class="produtos-em-destaque">
+				<img src="./imgs/coelho.jpg" alt="">
+				<p>Nome do Produto<br/>
+					<span>R$100,00</span>
+				</p>
+				<img class="cart-plus-icon"
+				src="./imgs/icons/cart-plus-icon.svg" alt="Icone de adicionar produto ao carrinho">
+			</div>
+
+			<div class="produtos-em-destaque">
+				<img src="./imgs/coelho.jpg" alt="">
+				<p>Nome do Produto<br/>
+					<span>R$100,00</span>
+				</p>
+				<img class="cart-plus-icon"
+				src="./imgs/icons/cart-plus-icon.svg" alt="Icone de adicionar produto ao carrinho">
+			</div>
+
+		</section>
+		<!-- Footer -->
+	</main>
+
+	<footer id="footer">
+				
+				<nav id="nav-footer" class="container">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Sobre</a></li>
+						<li><a href="#">Contato</a></li>
+						<li><a href="#">Produtos</a></li>
+					</ul>
+				</nav>
+
+				<img src="./imgs/Logo-Txt.png" alt="Art Desig & Cia Logo">
+		</footer>
+
+	<script type="text/javascript"
+	src="./js/main.js"></script>
 </body>
 </html>
