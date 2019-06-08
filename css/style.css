@@ -34,7 +34,7 @@ a{text-decoration: none;}
 	justify-content: center;
 }
 
-#bars-menu, #cart-shop{
+#bars-menu{
 	width: 25%;
 }
 
@@ -46,12 +46,16 @@ a{text-decoration: none;}
 }
 
 #top-logo{
-	width: 50%;
+	width: 40%;
 }
 
 #top-logo img {
+	float: right;
 	width: 210px;
 	height: 30px;
+}
+#cart-shop {
+	width: 35%;
 }
 
 #cart-shop p {
@@ -61,7 +65,7 @@ a{text-decoration: none;}
 
 #cart-shop img {
 	height: 18px;
-	padding-left: 10px;
+	padding-left: 2px;
 
 }
 
@@ -83,10 +87,24 @@ a{text-decoration: none;}
 #open-menu.active-menu {
 	left: 0%;
 }
-
 #search-bar {
-	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row-reverse;
+}
+
+#search-bar img {
+	width: 5%;
+	height: 15px;
+	margin-top: 11px;
+	margin-right: 10px;
+	opacity: 0.6;
+}
+
+#search-bar input {
+	width: 95%;
 	height: 40px;
+	float: left;
 	font-size: 18px;
 	padding: 0 10px;
 	background-color: #f2f2f2;
@@ -134,7 +152,7 @@ a{text-decoration: none;}
 
 #close-menu {
 	top: 0;
-	right: -50%;
+	right: 100%;
 	width: 30%;
 	height: 100%;
 	position: absolute;
@@ -162,10 +180,10 @@ a{text-decoration: none;}
 	font-size: 18px;
 	margin-top: 10px;
 	padding-top: 3px;
-	font-weight: bold;
+	font-weight: bolder;
 	text-align: center;
 	text-transform: uppercase;
-	background-color: #e59e9c;
+	background-color: #0DCCD5;
 }
 
 .produtos-em-destaque {
@@ -196,6 +214,7 @@ a{text-decoration: none;}
 
 .produtos-em-destaque 
 .cart-plus-icon {
+	width: 20px;
 	height: 20px;
 	text-align: center;
 }
@@ -204,17 +223,33 @@ a{text-decoration: none;}
 
 #footer {
 	width: 100%;
+	height: auto;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
-	background-color: #333;
+	justify-content: center;
+	background-color: #0DCCD5;
 }
 
 #nav-footer {
 	width: 100%;
 }
 
-#footer img {
-	width: 100%;
+#nav-footer ul {
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+	padding-top: 20px;
+}
+
+#nav-footer ul li a{
+	color: #222;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+
+#footer p {
+	color: #FFF;
+	font-size: 50px;
+	font-weight: lighter;
 	padding: 10px 40px;
 }
