@@ -34,25 +34,58 @@
 			<nav id="navbar">
 				
 				<div id="open-menu">
-					
-					<div id="search-bar">
-						<img src="./imgs/icons/search-icon.svg">
-						<input type="text" placeholder="SEARCH">
+					<div id="menu-a">
+						<div id="search-bar">
+							<img src="./imgs/icons/search-icon.svg">
+							<input type="text" placeholder="SEARCH">
+						</div>
+
+						<ul id="nav-menu">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Sobre</a></li>
+							<li><a href="#">Contato</a></li>
+							<li><a href="#">Produtos</a>
+								<span id="btn-produtos" onclick="open_Menu_Produtos()"> > </span>
+							</li>
+						</ul>
+						<ul id="nav-login">	
+							<li><a href="#">Entrar</a></li>
+							<li><a href="#">Sair</a></li>
+						</ul>
+				</div>
+					<div id="menu-b">
+						<p onclick="back_Menu_A()"> <span> < </span> Voltar</p>
+						<ul>
+							<li>
+								<span onclick="colecaoDrop()">▼</span>
+								<a href="#">Coleções</a>
+								<ul id="menu-b-colecao">
+									<li>
+										<a href="#">Coleção 1</a>
+									</li>
+									<li>
+										<a href="#">Coleção 2</a>
+									</li>
+									<li>
+										<a href="#">Coleção 3</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<span onclick="materialDrop()">▼</span>
+								<a href="#">Materiais</a>
+								<ul id="menu-b-material">
+									<li>
+										<a href="#">Material 1</a>
+									</li>
+									<li>
+										<a href="#">Material 2</a>
+									</li>
+								</ul>
+							</li>
+							</li>
+						</ul>
 					</div>
-
-					<ul id="nav-menu">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Sobre</a></li>
-						<li><a href="#">Contato</a></li>
-						<li><a href="#">Produtos</a>
-							<span> > </span>
-						</li>
-					</ul>
-					<ul id="nav-login">	
-						<li><a href="#">Entrar</a></li>
-						<li><a href="#">Sair</a></li>
-					</ul>
-
 				</div>
 
 				<div id="close-menu" onclick="closeMenu()"></div>

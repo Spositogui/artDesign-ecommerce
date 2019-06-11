@@ -87,6 +87,15 @@ a{text-decoration: none;}
 #open-menu.active-menu {
 	left: 0%;
 }
+
+#menu-a {
+	left: 0;
+}
+
+#menu-a.active-produtos {
+	display: none;
+}
+
 #search-bar {
 	display: flex;
 	flex-wrap: nowrap;
@@ -126,13 +135,18 @@ a{text-decoration: none;}
 	text-transform: uppercase;
 }
 
-#nav-menu  li span {
-	padding: 0px 10px;
+#btn-produtos {
 	color: #fff;
 	cursor: pointer;
 	margin-left: 50%;
+	padding: 0px 10px;
 	margin-bottom: 5px;
 	background-color: #333;
+}
+
+#btn-produtos:hover {
+	color: #333;
+	background-color: #999;
 }
 
 #nav-login {
@@ -150,6 +164,99 @@ a{text-decoration: none;}
 	text-transform: uppercase;
 }
 
+#menu-b {
+	width: 100%;
+	top: 0;
+	left: 70%;
+	display: none;
+	position: absolute;
+}
+
+#menu-b.active-produtos {
+	left: 0;
+	display: block;
+	transition: all 600ms linear;
+}
+
+#menu-b p {
+	color: #888;
+	height: 30px;
+	font-size: 17px;
+	margin-top: 10px;
+	margin-left: 10px;
+	background-color: #f2f2f2;
+}
+
+#menu-b p:hover {
+	color: #0DCCD5;
+	cursor: pointer;
+}
+
+#menu-b p span {
+	padding: 0px 5px;
+	margin-right: 5px;
+	color: #fff;
+	background-color: #333;
+}
+
+#menu-b ul {
+	width: 100%;
+	list-style: none;
+	background-color: #fff;
+}
+
+#menu-b li {
+	padding: 8px 0;
+	margin-left: 10px;
+}
+
+#menu-b a {
+	color: #333;
+	font-size: 23px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#menu-b li span {
+	font-size: 12px;
+	color: #fff;
+	cursor: pointer;
+	padding: 6px 5px 3px 5px;
+ 	background-color: #333;
+}
+
+#menu-b-colecao {
+	width: 100px;
+	margin-left: 8px;
+	line-height: 20px;
+	display: none;
+	transition: all 700ms;
+}
+
+#menu-b-colecao.drop {display: block;}
+
+#menu-b-colecao li a {
+	font-size: 18px;
+	padding: 10px;
+	text-transform: none;
+}
+
+#menu-b-material {
+	width: 100px;
+	margin-left: 8px;
+	line-height: 20px;
+	display: none;
+	transition: all 700ms;
+}
+
+#menu-b-material.drop {display: block;}
+
+#menu-b-material li a {
+	font-size: 18px;
+	padding: 10px;
+	text-transform: none;
+}
+
 #close-menu {
 	top: 0;
 	right: 100%;
@@ -159,6 +266,7 @@ a{text-decoration: none;}
 	background-color: #333;
 	opacity: 0.4;
 	transition: all 500ms linear;
+	z-index: 2;
 }
 
 #close-menu.active-close-menu{
@@ -239,7 +347,10 @@ a{text-decoration: none;}
 	justify-content: space-around;
 	list-style: none;
 	padding-top: 20px;
+	border-bottom: 1px solid #f5f5f5;
 }
+
+#nav-footer ul li {padding-bottom: 15px;}
 
 #nav-footer ul li a{
 	color: #222;
