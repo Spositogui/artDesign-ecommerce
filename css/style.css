@@ -411,5 +411,21 @@ a{text-decoration: none;}
 /*IPad-pro, PCs*/
 
 @media(min-width: 1024px){
+	
+	.container {
+		margin: 0 auto;
+		width: 952px;
+	}
+
+	#bars-menu {
+		display: none;
+	}
+
+
+	#footer {
+		margin: 0 auto;
+		width: 962px;
+	}
+
 
 }
