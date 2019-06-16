@@ -17,6 +17,12 @@
 				<div id="bars-menu">
 					<img src="./imgs/icons/bars-icon.svg" alt="menu drop down" onclick="openMenu()">
 				</div>
+
+				<ul id="header-login">	
+					<li><a href="#">Entrar</a></li>
+					<li>/</li>
+					<li><a href="#">Sair</a></li>
+				</ul>
 				
 				<div id="top-logo">
 					<img src="./imgs/Logo-Txt.png" alt="Logo Art Design & Cia">
@@ -37,15 +43,30 @@
 					<div id="menu-a">
 						<div id="search-bar">
 							<img src="./imgs/icons/search-icon.svg">
-							<input type="text" placeholder="SEARCH">
+							<input type="text" placeholder="BUSCA">
 						</div>
 
 						<ul id="nav-menu">
 							<li><a href="#">Home</a></li>
 							<li><a href="#">Sobre</a></li>
 							<li><a href="#">Contato</a></li>
-							<li><a href="#">Produtos</a>
+							<li id="prod-hover"><a href="#">Produtos</a>
 								<span id="btn-produtos" onclick="open_Menu_Produtos()"> > </span>
+								<ul>
+									<li id="colecao-hover">Coleção
+										<ul>
+											<li>Coleção 1</li>
+											<li>Coleção 2</li>
+											<li>Coleção 3</li>
+										</ul>
+									</li>
+									<li id="material-hover">Material
+										<ul>
+											<li>Material 1</li>
+											<li>Material 2</li>
+										</ul>
+									</li>
+								</ul>
 							</li>
 						</ul>
 						<ul id="nav-login">	
@@ -97,6 +118,42 @@
 			
 			<div class="header-section">Destaques</div>
 			
+			<div class="produtos-em-destaque">
+				<img src="./imgs/coelho.jpg" alt="">
+				<p>Nome do Produto<br/>
+					<span>R$100,00</span>
+				</p>
+				<img class="cart-plus-icon"
+				src="./imgs/icons/cart-plus-icon.svg" alt="Icone de adicionar produto ao carrinho">
+			</div>
+
+			<div class="produtos-em-destaque">
+				<img src="./imgs/coelho.jpg" alt="">
+				<p>Nome do Produto<br/>
+					<span>R$100,00</span>
+				</p>
+				<img class="cart-plus-icon"
+				src="./imgs/icons/cart-plus-icon.svg" alt="Icone de adicionar produto ao carrinho">
+			</div>
+
+			<div class="produtos-em-destaque">
+				<img src="./imgs/coelho.jpg" alt="">
+				<p>Nome do Produto<br/>
+					<span>R$100,00</span>
+				</p>
+				<img class="cart-plus-icon"
+				src="./imgs/icons/cart-plus-icon.svg" alt="Icone de adicionar produto ao carrinho">
+			</div>
+
+			<div class="produtos-em-destaque">
+				<img src="./imgs/coelho.jpg" alt="">
+				<p>Nome do Produto<br/>
+					<span>R$100,00</span>
+				</p>
+				<img class="cart-plus-icon"
+				src="./imgs/icons/cart-plus-icon.svg" alt="Icone de adicionar produto ao carrinho">
+			</div>
+
 			<div class="produtos-em-destaque">
 				<img src="./imgs/coelho.jpg" alt="">
 				<p>Nome do Produto<br/>
