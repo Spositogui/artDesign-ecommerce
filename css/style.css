@@ -417,6 +417,87 @@ a{text-decoration: none;}
 	padding: 10px 40px;
 }
 
+/* CONTACT */
+
+#form {
+	margin: 50px 0;
+	text-align: center;
+	border: 2px solid #0DCCD5;
+	color: #333;
+	border-radius: 3px;
+}
+
+#form h2 {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-container {
+	margin: 25px 0;
+}
+
+.form-label {
+	width: 300px;
+	color: #a7a9a8;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0 auto;
+	text-align: start;
+}
+
+.form-config {
+	margin-top: 5px;
+}
+
+.form-config input {
+	width: 300px;
+	height: 50px;
+	color: #666;
+	font-size: 18px;
+	padding: 0 10px;
+	border: 1px solid #b9b9b9;
+	border-radius: 4px;
+}
+
+.form-config input::placeholder,
+.form-config textarea::placeholder {
+	color: #B9B9B9;
+	opacity: 1;
+}
+
+.form-config textarea {
+	width: 300px;
+	height: 150px;
+	color: #666;
+	font-size: 18px;
+	padding: 10px 10px;
+	margin-bottom: 20px;
+	border: 1px solid #b9b9b9;
+	border-radius: 4px;
+}
+
+#submit-btn {
+	width: 70px;
+	height: 35px;
+	margin-bottom: 20px;
+	color: #666;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: bold;
+	background-color: #0DCCD5;
+	border: 1px solid rgba(122,122,122,0.5);
+	border-radius: 4px;
+}
+
+#submit-btn:hover {
+	color: #0DCCD5;
+	border-color: rgba(5,199,197, 0.4);
+	background-color: rgba(50,50,50, 1);
+}
+
+/*CONTACT END*/
+
 /* IPhone 5/SE 320 x 568 */
 @media (max-width: 380px ){
 
@@ -573,7 +654,7 @@ a{text-decoration: none;}
 
 	#nav-login { display: none; }
 
-	#menu-b {display: none;}
+	#menu-b {display: none!important;}
 
 	#open-menu {
 		left: 0%;
@@ -606,6 +687,15 @@ a{text-decoration: none;}
 
 	#nav-footer {
 		background-color: #0DCCD5;
+	}
+
+	/* Contact*/
+	#contact {
+		height: 100%;
+	}
+
+	#form {
+		margin-bottom: 20px;
 	}
 
 
