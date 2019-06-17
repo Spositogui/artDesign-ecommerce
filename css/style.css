@@ -153,6 +153,7 @@ a{text-decoration: none;}
 }
 
 #prod-hover ul {
+	width: 80px;
 	position: absolute;
 	display: none;
 	list-style: none;
@@ -163,6 +164,8 @@ a{text-decoration: none;}
 }
 
 #prod-hover ul li {
+	margin-left: 0;
+	width: 80px;
 	cursor: pointer;
 	color: #f2f2f2;
 }
@@ -176,6 +179,10 @@ a{text-decoration: none;}
 	border-left: 1px solid #7A7979;
 }
 
+#colecao-hover ul li {
+	margin-left: 18px;
+}
+
 #material-hover ul {
 	top: 55%;
 	left: 100%;
@@ -183,6 +190,10 @@ a{text-decoration: none;}
 	position: absolute;
 	display: none!important;
 	border-left: 1px solid #7A7979;
+}
+
+#material-hover ul li {
+	margin-left: 18px;
 }
 
 #nav-login {
@@ -266,7 +277,7 @@ a{text-decoration: none;}
 	margin-left: 8px;
 	line-height: 20px;
 	display: none;
-	transition: all 700ms;
+	background-color: unset!important;
 }
 
 #menu-b-colecao.drop {display: block;}
@@ -282,7 +293,7 @@ a{text-decoration: none;}
 	margin-left: 8px;
 	line-height: 20px;
 	display: none;
-	transition: all 700ms;
+	background-color: unset!important;
 }
 
 #menu-b-material.drop {display: block;}
@@ -291,6 +302,11 @@ a{text-decoration: none;}
 	font-size: 18px;
 	padding: 10px;
 	text-transform: none;
+}
+
+#menu-b-colecao li,
+#menu-b-material li {
+	width: 50%;
 }
 
 #close-menu {
