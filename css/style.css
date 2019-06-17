@@ -153,7 +153,36 @@ a{text-decoration: none;}
 }
 
 #prod-hover ul {
+	position: absolute;
 	display: none;
+	list-style: none;
+	margin-top: 8px;
+	text-align: center;
+	background-color: #333;
+	border-top: 1px solid #7A7979;
+}
+
+#prod-hover ul li {
+	cursor: pointer;
+	color: #f2f2f2;
+}
+
+#colecao-hover ul {
+	top: 0;
+	left: 100%;
+	width: 120px;
+	position: absolute;
+	display: none!important;
+	border-left: 1px solid #7A7979;
+}
+
+#material-hover ul {
+	top: 55%;
+	left: 100%;
+	width: 120px;
+	position: absolute;
+	display: none!important;
+	border-left: 1px solid #7A7979;
 }
 
 #nav-login {
@@ -514,12 +543,16 @@ a{text-decoration: none;}
 
 	#btn-produtos {display: none;}
 
-	#prod-hover ul {
-		display: none;
+	#prod-hover:hover ul {
+		display: block;
 	}
 
-	#prod-hover ul:hover {
-		display: block;
+	#colecao-hover:hover ul {
+		display: block!important;
+	}
+
+	#material-hover:hover ul {
+		display: block!important;
 	}
 
 	#nav-login { display: none; }
